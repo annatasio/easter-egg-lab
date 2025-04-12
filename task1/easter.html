@@ -25,7 +25,6 @@
         // Easter egg: Konami code reveals rainbow background
         let keys = [];
         document.addEventListener('keydown', (e) => {
-<<<<<<< HEAD
             keys.push(e.key.toLowerCase());
 
             if (keys.length > 8) {
@@ -34,11 +33,6 @@
 
             if (keys.join('') === 'kangaroo') {
                 document.body.style.background = 'linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet)';
-=======
-            keys.push(e.key);
-            if (keys.join(',').includes('ArrowUp,ArrowUp,ArrowDown,ArrowDown')) {
-                document.body.style.background = 'linear-gradient(45deg, blue,orange)';
->>>>>>> moreEggs
             }
         });
     </script>
