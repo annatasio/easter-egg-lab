@@ -12,6 +12,10 @@
     <div class="egg" onclick="alert('You found a chocolate egg! 🍫')"></div>
     <div class="egg" onclick="document.getElementById('secretBunny').style.display='block'"></div>
     <div class="egg" onclick="this.style.background='rainbow'"></div>
+    <div class="egg-new" style="background: linear-gradient(45deg, #03fcdf, #03fcdf);"></div>
+    <div class="egg-new" style="background: linear-gradient(45deg, #ad03fc, #ad03fc);"></div>
+    <div class="egg-new" style="background: linear-gradient(45deg, #fc7f03, #fc7f03);"></div>
+
 
     <p class="hidden-basket">🧺 Secret Easter Basket Found! 🧺</p>
     
@@ -21,6 +25,7 @@
         // Easter egg: Konami code reveals rainbow background
         let keys = [];
         document.addEventListener('keydown', (e) => {
+<<<<<<< HEAD
             keys.push(e.key.toLowerCase());
 
             if (keys.length > 8) {
@@ -29,6 +34,11 @@
 
             if (keys.join('') === 'kangaroo') {
                 document.body.style.background = 'linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet)';
+=======
+            keys.push(e.key);
+            if (keys.join(',').includes('ArrowUp,ArrowUp,ArrowDown,ArrowDown')) {
+                document.body.style.background = 'linear-gradient(45deg, blue,orange)';
+>>>>>>> moreEggs
             }
         });
     </script>
