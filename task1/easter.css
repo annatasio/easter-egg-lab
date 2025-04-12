@@ -5,7 +5,7 @@ body {
 }
 .egg {
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 130px;
     background: linear-gradient(45deg, #8B0000, #8B0000);
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
@@ -18,7 +18,7 @@ body {
 }
 .egg-new {
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 130px;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     margin: 10px;
